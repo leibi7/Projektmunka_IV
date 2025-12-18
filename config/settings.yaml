@@ -1,0 +1,14 @@
+default:
+  timezone: Europe/Budapest
+  data_path: data/sample_consumption.csv
+  db_url: sqlite:///data/app.db
+  weather_cache: data/weather_cache.sqlite
+  artifacts_dir: artifacts
+  default_horizon_hours: 24
+  models:
+    baseline_path: artifacts/baseline_model.pkl
+    patchtst_path: artifacts/patchtst
+    granite_path: artifacts/granite
+  open_meteo:
+    base_url: https://api.open-meteo.com/v1
+    geocoding_url: https://geocoding-api.open-meteo.com/v1
