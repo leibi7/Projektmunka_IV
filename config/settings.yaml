@@ -1,6 +1,6 @@
 default:
   timezone: Europe/Budapest
-  data_path: data/sample_consumption.csv
+  data_path: data/household_power_sample.csv
   db_url: sqlite:///data/app.db
   weather_cache: data/weather_cache.sqlite
   artifacts_dir: artifacts

@@ -60,6 +60,10 @@ Runs unit tests for data windowing, weather cache keys, and profile CRUD.
 - `scripts/train_patchtst.py`: fine-tune PatchTST
 - `scripts/eval_models.py`: evaluate multiple models, produce reports
 - `scripts/generate_demo_data.py`: synthesize demo consumption CSV
+- `scripts/download_real_data.py`: fetch real household power data (UCI) into `data/household_power_sample.csv`
+
+## Real data source
+Use `python scripts/download_real_data.py --days 14 --output data/household_power_sample.csv` to pull a two-week slice from the UCI Household Power Consumption dataset (minute-level, converted to UTC). Update `config/settings.yaml` or `.env` `DATABASE_URL`/`data_path` if you place it elsewhere.
 
 ## Notes
 - IBM Granite TTM is used in zero-shot mode by default. Fine-tuning hook left experimental.
